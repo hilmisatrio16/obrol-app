@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:contentPadding="4dp"
+    app:cardBackgroundColor="#F6F6F7"
+    app:cardCornerRadius="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageMember"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/tester_image"
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Hilmi"
+            android:textColor="@color/black5"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageMember"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/verified"
+            android:layout_marginStart="6dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/tvUsername"
+            app:layout_constraintBottom_toBottomOf="@id/tvUsername"
+            app:layout_constraintStart_toEndOf="@id/tvUsername"
+            app:tint="@color/blue5" />
+
+        <TextView
+            android:id="@+id/tvDateJoin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="bergabung sejak 2 mei 2023"
+            android:textColor="@color/black5"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/imageMember"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvUsername"
+            app:layout_constraintTop_toBottomOf="@id/tvUsername"
+            android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

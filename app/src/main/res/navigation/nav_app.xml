@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.obrolapp.obrol.view.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_postContentFragment"
+            app:destination="@id/postContentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.obrolapp.obrol.view.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/loginFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.obrolapp.obrol.view.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.obrolapp.obrol.view.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/profileFragment2"/>
+    </fragment>
+    <fragment
+        android:id="@+id/joinCommunityFragment"
+        android:name="com.obrolapp.obrol.view.fragment.JoinCommunityFragment"
+        android:label="fragment_join_community"
+        tools:layout="@layout/fragment_join_community" >
+        <action
+            android:id="@+id/action_joinCommunityFragment_to_createCommunityFragment"
+            app:destination="@id/createCommunityFragment" />
+        <action
+            android:id="@+id/action_joinCommunityFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCommunityFragment"
+        android:name="com.obrolapp.obrol.view.fragment.CreateCommunityFragment"
+        android:label="fragment_create_community"
+        tools:layout="@layout/fragment_create_community" >
+        <action
+            android:id="@+id/action_createCommunityFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/postContentFragment"
+        android:name="com.obrolapp.obrol.view.fragment.PostContentFragment"
+        android:label="fragment_post_content"
+        tools:layout="@layout/fragment_post_content" >
+        <action
+            android:id="@+id/action_postContentFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.obrolapp.obrol.view.fragment.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/splashScreenFragment"/>
+        <action
+            android:id="@+id/action_splashScreenFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/splashScreenFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.obrolapp.obrol.view.fragment.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/chattingGroupFragment"
+        android:name="com.obrolapp.obrol.view.fragment.ChattingGroupFragment"
+        android:label="fragment_chatting_group"
+        tools:layout="@layout/fragment_chatting_group" >
+        <action
+            android:id="@+id/action_chattingGroupFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.obrolapp.obrol.view.fragment.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_infoCommunityFragment"
+            app:destination="@id/infoCommunityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoCommunityFragment"
+        android:name="com.obrolapp.obrol.view.fragment.InfoCommunityFragment"
+        android:label="fragment_info_community"
+        tools:layout="@layout/fragment_info_community" >
+        <action
+            android:id="@+id/action_infoCommunityFragment_to_memberCommunityFragment"
+            app:destination="@id/memberCommunityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memberCommunityFragment"
+        android:name="com.obrolapp.obrol.view.fragment.MemberCommunityFragment"
+        android:label="fragment_member_community"
+        tools:layout="@layout/fragment_member_community" />
+    <fragment
+        android:id="@+id/contentPublicFragment"
+        android:name="com.obrolapp.obrol.view.fragment.ContentPublicFragment"
+        android:label="fragment_content_public"
+        tools:layout="@layout/fragment_content_public" >
+        <action
+            android:id="@+id/action_contentPublicFragment_to_detailExploreFragment"
+            app:destination="@id/detailExploreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailExploreFragment"
+        android:name="com.obrolapp.obrol.view.fragment.DetailExploreFragment"
+        android:label="fragment_detail_explore"
+        tools:layout="@layout/fragment_detail_explore" />
+</navigation>

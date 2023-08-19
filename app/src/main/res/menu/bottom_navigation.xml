@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment2"
+        android:title="Beranda"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/contentPublicFragment"
+        android:title="Explore"
+        android:icon="@drawable/travel_explore"/>
+    <item
+        android:id="@+id/joinCommunityFragment"
+        android:title="Add"
+        android:icon="@drawable/add_box"/>
+    <item
+        android:id="@+id/chattingGroupFragment"
+        android:title="Chat"
+        android:icon="@drawable/forum"/>
+    <item
+        android:id="@+id/profileFragment2"
+        android:title="Profile"
+        android:icon="@drawable/person"/>
+</menu>

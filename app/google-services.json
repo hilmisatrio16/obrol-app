@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "999385104712",
+    "project_id": "application-android-88ff0",
+    "storage_bucket": "application-android-88ff0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999385104712:android:289341a01d620ad130f37d",
+        "android_client_info": {
+          "package_name": "com.obrolapp.obrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999385104712-b5vqtgmddb63dpbedctvk3g8u927pjf6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.obrolapp.obrol",
+            "certificate_hash": "7ae7e78736f7502771ae3f2a2d5dae3949f707b1"
+          }
+        },
+        {
+          "client_id": "999385104712-5bv1e8vditbb1io7m2s8k49lrcra7abc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMDlAdEvS1QdMxnkrXpNYqoWT6fVg0bGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999385104712-5bv1e8vditbb1io7m2s8k49lrcra7abc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
